@@ -1,0 +1,135 @@
+07-Jan-2022 16:42:31
+
+burgers_steady_viscous_test():
+  MATLAB/Octave version 9.8.0.1380330 (R2020a) Update 2
+  Test BURGERS_STEADY_VISCOUS.
+
+bsv_test01():
+  Solution of steady viscous Burgers equation.
+
+  Step  ||F(U)||
+
+     0  0.9
+     1  1.3177
+     2  0.140345
+     3  0.00158582
+     4  1.58645e-07
+
+  Saved plot to file "bsv_test01.png".
+
+  U(X0) = 0 estimated at X0 = -8.25451e-14
+
+bsv_test02():
+  Solution of steady viscous Burgers equation.
+  Consider a variety of values of viscosity nu.
+
+  Using NU = 0.8
+  Using NU = 0.4
+  Using NU = 0.2
+  Using NU = 0.1
+  Using NU = 0.05
+  Using NU = 0.025
+
+BURGERS_STEADY_VISCOUS - Warning!
+  The Newton iteration did not converge.
+
+  Saved plot to file "bsv_test02.png".
+
+bsv_test03():
+  Solution of steady viscous Burgers equation.
+  Vary the left boundary condition ALPHA around the value +1.
+
+  Using ALPHA = 0.96
+  Using ALPHA = 0.98
+  Using ALPHA = 0.99
+  Using ALPHA = 0.995
+  Using ALPHA = 1
+  Using ALPHA = 1.005
+  Using ALPHA = 1.01
+  Using ALPHA = 1.02
+  Using ALPHA = 1.04
+
+  Saved plot to file "bsv_test03.png".
+
+BSV_TEST04:
+  Solution of steady viscous Burgers equation.
+  Vary the left boundary location A around the value -1.
+
+  Using A = -1.04
+  Using A = -1.02
+  Using A = -1.01
+  Using A = -1.005
+  Using A = -1
+  Using A = -0.995
+  Using A = -0.99
+  Using A = -0.98
+  Using A = -0.96
+
+  Saved plot to file "bsv_test04.png".
+
+BSV_TEST05:
+  For the Burgers equation on [A,B] with viscosity NU and 
+  boundary conditions U(A)=ALPHA, U(B) = BETA,
+  with ALPHA and BETA of opposite sign,
+  let X0 be the point where the solution U changes sign.
+  Sample and plot the functional relationship X0(ALPHA).
+
+  Saved plot to file "bsv_test05.png".
+
+BSV_TEST06:
+  For the Burgers equation on [A,B] with viscosity NU and 
+  boundary conditions U(A)=ALPHA, U(B) = BETA,
+  with ALPHA and BETA of opposite sign,
+  let X0 be the point where the solution U changes sign.
+  Assume ALPHA is Gaussian with mean 0 and standard deviation 0.05.
+  Estimate E(X0(ALPHA)) using M Gaussian samples.
+
+     M    E(X0(ALPHA)) estimate
+
+    16        0.193442
+    32       0.0656687
+    64     7.46236e-06
+   128      -0.0858523
+   256       0.0129652
+   512      -0.0164546
+  1024       0.0261832
+
+BSV_TEST06:
+  For the Burgers equation on [A,B] with viscosity NU and 
+  boundary conditions U(A)=ALPHA, U(B) = BETA,
+  with ALPHA and BETA of opposite sign,
+  let X0 be the point where the solution U changes sign.
+  Assume ALPHA is Gaussian with mean 0 and standard deviation 0.05.
+  Estimate Var(X0(ALPHA)) using M Gaussian samples.
+
+     M    Var(X0(ALPHA)) estimate
+
+    16         0.35783
+    32        0.360782
+    64        0.341962
+   128         0.35244
+   256        0.332313
+   512        0.344162
+  1024        0.341841
+
+BSV_TEST08:
+  Compare BSV and BSV_UPWIND.
+  Upwinding is a scheme which reduces the numerical oscillations
+  that can occur as the viscosity in the Burgers equation is decreased.
+
+  The distortion caused by upwinding is visible for N = 21, NU = 0.1.
+  The oscillations caused by NOT upwinding are visible for N = 21, NU = 0.01.
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.700743e-17.] 
+[> In burgers_steady_viscous (line 103)
+  In bsv_test08 (line 69)
+  In burgers_steady_viscous_test (line 40)
+  In run (line 91)
+] 
+
+  Saved plot to file "bsv_test08.png".
+
+burgers_steady_viscous_test():
+  Normal end of execution.
+
+07-Jan-2022 16:43:22

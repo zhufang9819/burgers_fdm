@@ -1,8 +1,8 @@
-function fd1d_burgers_leap_test ( )
+function burgers_steady_viscous_test ( )
 
 %*****************************************************************************80
 %
-%% fd1d_burgers_leap_test() tests fd1d_burgers_leap().
+%% burgers_steady_viscous_test() tests burgers_steady_viscous().
 %
 %  Licensing:
 %
@@ -10,35 +10,48 @@ function fd1d_burgers_leap_test ( )
 %
 %  Modified:
 %
-%    13 January 2019
+%    04 December 2018
 %
 %  Author:
 %
 %    John Burkardt
 %
-  addpath ( '../fd1d_burgers_leap' )
+  addpath ( '../burgers_steady_viscous' );
 
   timestamp ( );
   fprintf ( 1, '\n' );
-  fprintf ( 1, 'fd1d_burgers_leap_test():\n' );
+  fprintf ( 1, 'burgers_steady_viscous_test():\n' );
   fprintf ( 1, '  MATLAB/Octave version %s\n', version ( ) );
-  fprintf ( 1, '  Test fd1d_burgers_leap().\n' );
+  fprintf ( 1, '  Test BURGERS_STEADY_VISCOUS.\n' );
 
-  fd1d_burgers_leap ( );
-  filename = 'fd1d_burgers_leap_test.png';
-  print ( '-dpng', filename );
-  fprintf ( 1, '\n' );
-  fprintf ( 1, '  Saving plot as "%s".\n', filename );
+  bsv_test01 ( );
+  pause ( 5 );
+  bsv_test02 ( );
+  pause ( 5 );
+  bsv_test03 ( );
+  pause ( 5 );
+  bsv_test04 ( );
+  pause ( 5 );
+  bsv_test05 ( );
+  pause ( 5 );
+  bsv_test06 ( );
+  bsv_test07 ( );
+  pause ( 5 );
+  bsv_test08 ( );
+  pause ( 5 );
+
+  tanh_plot ( );
+  pause ( 5 );
 %
 %  Terminate.
 %
   fprintf ( 1, '\n' );
-  fprintf ( 1, 'fd1d_burgers_leap_test():\n' );
+  fprintf ( 1, 'burgers_steady_viscous_test():\n' );
   fprintf ( 1, '  Normal end of execution.\n' );
   fprintf ( 1, '\n' );
   timestamp ( );
 
-  rmpath ( '../fd1d_burgers_leap' )
+  rmpath ( '../burgers_steady_viscous' );
 
   return
 end
