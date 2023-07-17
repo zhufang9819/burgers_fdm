@@ -1,0 +1,139 @@
+07-Jan-2022 16:44:07
+
+burgers_time_viscous_test():
+  MATLAB/Octave version 9.8.0.1380330 (R2020a) Update 2
+  Test BURGERS_TIME_VISCOUS.
+
+btv_test01():
+  Test BURGERS_TIME_VISCOUS with the gaussian initial condition.
+
+  Initial condition: gaussian
+  Number of space nodes = 81
+  Number of time steps = 200
+  Final time T_MAX = 2
+  Viscosity = 0.01
+  Boundary condition = 4
+
+  Saved plot as "btv_test01.png"
+
+btv_test02():
+  Test BURGERS_TIME_VISCOUS with the gaussian initial condition.
+  Now we use the clamped boundary condition.
+
+  Initial condition: gaussian
+  Number of space nodes = 81
+  Number of time steps = 200
+  Final time T_MAX = 2
+  Viscosity = 0.01
+  Boundary condition = 0
+
+  Saved plot as "btv_test02.png"
+
+btv_test03():
+  Test BURGERS_TIME_VISCOUS with the gaussian initial condition.
+  Use a Neumann condition on the right.
+
+  Initial condition: gaussian
+  Number of space nodes = 81
+  Number of time steps = 200
+  Final time T_MAX = 2
+  Viscosity = 0.01
+  Boundary condition = 3
+
+  Saved plot as "btv_test03.png"
+
+btv_test04():
+  Test BURGERS_TIME_VISCOUS with the shock initial condition.
+  Use periodic boundaries.
+
+  Initial condition: shock
+  Number of space nodes = 81
+  Number of time steps = 300
+  Final time T_MAX = 3
+  Viscosity = 0.01
+  Boundary condition = 4
+
+  Saved plot as "btv_test04.png"
+
+btv_test05():
+  Test BURGERS_TIME_VISCOUS with the expansion initial condition.
+  Use periodic boundaries.
+
+  Initial condition: expansion
+  Number of space nodes = 81
+  Number of time steps = 200
+  Final time T_MAX = 2
+  Viscosity = 0.01
+  Boundary condition = 4
+
+  Saved plot as "btv_test05.png"
+
+btv_test06():
+  Test BURGERS_TIME_VISCOUS with the spline initial condition.
+  Use periodic boundaries.
+
+  Initial condition: spline
+  Number of space nodes = 81
+  Number of time steps = 200
+  Final time T_MAX = 2
+  Viscosity = 0.01
+  Boundary condition = 4
+
+  Saved plot as "btv_test06.png"
+
+btv_test07():
+  Test BURGERS_TIME_VISCOUS with the gaussian initial condition.
+  Plot the solutions U(X,T) as a surface.
+
+  Initial condition: gaussian
+  Number of space nodes = 81
+  Number of time steps = 200
+  Final time T_MAX = 2
+  Viscosity = 0.01
+  Boundary condition = 4
+
+  Saved plot as "btv_test07.png"
+
+btv_test08():
+  Test BURGERS_TIME_VISCOUS with the spline initial condition.
+  Use periodic boundaries.
+  Plot the solution profile at the final time.
+
+  Initial condition: spline
+  Number of space nodes = 81
+  Number of time steps = 200
+  Final time T_MAX = 2
+  Viscosity = 0.01
+  Boundary condition = 4
+
+  Saved plot as "btv_test08.png"
+
+btv_test09():
+  Test BURGERS_TIME_VISCOUS with the spike initial condition.
+
+  Initial condition: spike
+  Number of space nodes = 81
+  Number of time steps = 400
+  Final time T_MAX = 4
+  Viscosity = 0.01
+  Boundary condition = 4
+
+  Saved plot as "btv_test09.png"
+
+btv_test10():
+  Test BURGERS_TIME_VISCOUS with the shock initial condition.
+  BC: U(left)=0, U'(right)=0 boundary.
+
+  Initial condition: shock
+  Number of space nodes = 800
+  Number of time steps = 10000
+  Final time T_MAX = 2
+  Viscosity = 0.01
+  Boundary condition = 1
+
+  Saved plot as "btv_test10.png"
+
+burgers_time_viscous_test():
+  Normal end of execution.
+
+07-Jan-2022 16:45:07
